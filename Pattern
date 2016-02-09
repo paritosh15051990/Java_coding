@@ -1,0 +1,24 @@
+package JAVA_String;
+
+import java.util.regex.*;
+
+public class Anagram {
+
+	public static void main(String[] args) {
+		  // String to be scanned to find the pattern.
+	      String line = "This order was placed for QT3000! OK?";
+	      String pattern = "(.*)(\\d+)(.*)";
+
+	      // Create a Pattern object
+	      Pattern r = Pattern.compile(pattern);
+	      System.out.println(r);
+
+	      // Now create matcher object.
+	      Matcher m = r.matcher(line);
+	      System.out.println(m.group(0));
+	     
+		// TODO Auto-generated method stub
+
+	}
+
+}
