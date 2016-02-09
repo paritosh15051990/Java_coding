@@ -1,0 +1,36 @@
+package JAVA_String;
+import java.util.Scanner;
+public class String_lexo {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter String");
+		String k = sc.nextLine();
+		String b="z";
+		String c ="A";
+		int count=0,kk=0;
+		System.out.println("Enter number");
+		int j= sc.nextInt();
+		count=j;
+		for(int i=0;i<k.length();i++){
+			if((i+j)<=(k.length())){
+				
+				String a= k.substring(i,count);
+				count+=1;
+				if((kk=a.compareTo(b))<0){
+					b=a;	
+				}
+				
+				if((kk=a.compareTo(c))>0){
+					c=a;
+					
+					
+				}
+					
+			}
+		}
+		System.out.println(b);
+		System.out.println(c);
+		
+	}
+}
